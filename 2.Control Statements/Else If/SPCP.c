@@ -17,12 +17,10 @@ int main()
         printf("The seller has made a profit of : %d", sp - cp);
     }
 
-    // if(cp>sp){
-    //     printf("The seller has incurred a loss of : %d",cp-sp);;
-    // }
-    if (cp == sp)
+    else if (cp > sp)
     {
-        printf("The Seller has not made any profit or incurred any loss");
+        printf("The seller has incurred a loss of : %d", cp - sp);
+        ;
     }
 
     else
