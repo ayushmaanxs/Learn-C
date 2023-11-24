@@ -1,0 +1,10 @@
+/*
+Print the given pattern
+
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+
+*/
