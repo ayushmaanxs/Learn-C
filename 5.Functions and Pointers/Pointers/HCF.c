@@ -17,7 +17,7 @@ int gcd(int a,int b){
 
    //More optimised/better way 
 
-    for(int i=min;i>=1;i--){    //using reverse loop to make calculation easy for computer
+    for(int i=min(a,b);i>=1;i--){    //using reverse loop to make calculation easy for computer
         if(a%i==0 && b%i==0){
             hcf = i;
             break;

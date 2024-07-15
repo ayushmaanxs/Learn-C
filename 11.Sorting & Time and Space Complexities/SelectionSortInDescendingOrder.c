@@ -9,20 +9,20 @@ int main(){
 
     //Selection Sort Starts
     for(int i = 0;i<=n-2;i++){
-        int mini = i;
+        int maxi = i;
         for(int j = i;j<=n-1;j++){
-            if(arr[j]<arr[mini]){
-                mini = j;
+            if(arr[j]>arr[maxi]){
+                maxi = j;
             }
         }
         temp = arr[i];
-        arr[i]=arr[mini];
-        arr[mini]=temp;
+        arr[i]=arr[maxi];
+        arr[maxi]=temp;
     }
     
     //Selection Sort Ends
     printf("\n");
-    printf("Sorted array in ascending order : ");
+    printf("Sorted array in descending order : ");
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }

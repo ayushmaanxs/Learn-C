@@ -1,11 +1,10 @@
 /*
-Print the given pattern Star Cross
+Print the given pattern Zero and One
 
-*       *
-  *   *  
-    *    
-  *   *  
-*       *
+1
+0 1
+1 0 1
+0 1 0 1
 
 */
 #include <stdio.h>
@@ -14,12 +13,14 @@ int main(){
     printf("Enter number of rows: ");
     scanf("%d",&n);
     for(int i=1;i<=n;i++){
-        for(int j=1;j<=n;j++){
-            if(i==j || i+j==n+1){
-                printf("* ");
+        int a=1;
+        int b=0;
+        for(int j=1;j<=i;j++){
+            if((i+j)%2==0){
+                printf("%d ",a);
             }
             else{
-                printf("  ");
+                printf("%d ",b);
             }
         }
         printf("\n");

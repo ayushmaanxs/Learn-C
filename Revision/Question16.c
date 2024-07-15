@@ -15,15 +15,15 @@ int main(){
     scanf("%d",&n);
     int nsp=n-1,nst=1;
     for(int i=1;i<=n;i++){
-        for(int j=1;j<=nsp;j++){
-            printf("  ");
-        }
-        for(int k=1;k<=nst;k++){
-            printf("* ");
-        }
-        nst=nst+1;
-        nsp=nsp-1;
-        printf("\n");
+      for(int j=1;j<=nsp;j++){
+        printf("  ");
+      }
+      for(int j=1;j<=nst;j++){
+        printf("* ");
+      }
+      nsp--;
+      nst++;
+      printf("\n");
     }
     return 0;
 }
